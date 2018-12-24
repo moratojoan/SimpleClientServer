@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaRegistrar">
+
+    <EditText
+        android:id="@+id/txt_pr_usuari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Usuari"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_pr_contrasenya"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Contrasenya"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/txt_pr_usuari"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pr_email" />
+
+    <Button
+        android:id="@+id/btn_pr_registrar_se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Registrar Usuari"
+        app:layout_constraintEnd_toEndOf="@+id/txt_pr_contrasenya"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="@+id/txt_pr_contrasenya"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pr_contrasenya" />
+
+    <EditText
+        android:id="@+id/txt_pr_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txt_pr_usuari"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_pr_usuari"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pr_usuari" />
+</android.support.constraint.ConstraintLayout>
